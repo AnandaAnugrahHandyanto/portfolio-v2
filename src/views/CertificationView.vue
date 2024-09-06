@@ -29,10 +29,28 @@ export default {
           status: 'By Alibaba Cloud x Codepolitan x Developer Handal.',
         },
         {
-          id: 4,
+          id: 5,
           name: 'Learn Basic Web Programming JavaScript',
           imageUrl: 'javascript',
           status: 'By Alibaba Cloud x Codepolitan x Developer Handal.',
+        },
+        {
+          id: 6,
+          name: 'Introduction to DevOps',
+          imageUrl: 'devops',
+          status: 'By Alibaba Cloud x Codepolitan.',
+        },
+        {
+          id: 7,
+          name: 'Introduction to Alibaba Cloud CLI',
+          imageUrl: 'cloudcli',
+          status: 'By Alibaba Cloud x Codepolitan.',
+        },
+        {
+          id: 8,
+          name: 'Introduction to Serverless Computing',
+          imageUrl: 'serverlesscomputing',
+          status: 'By Alibaba Cloud x Codepolitan.',
         },
       ]
     };
