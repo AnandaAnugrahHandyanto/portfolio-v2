@@ -48,7 +48,55 @@ export default {
         },
         {
           id: 8,
-          name: 'Introduction to Serverless Computing',
+          name: 'Introduction to ACK',
+          imageUrl: 'ack',
+          status: 'By Alibaba Cloud x Codepolitan.',
+        },
+        {
+          id: 9,
+          name: 'Introduction to Function Coumpute',
+          imageUrl: 'compute',
+          status: 'By Alibaba Cloud x Codepolitan.',
+        },
+        {
+          id: 10,
+          name: 'Introduction to ARMS',
+          imageUrl: 'arms',
+          status: 'By Alibaba Cloud x Codepolitan.',
+        },
+        {
+          id: 11,
+          name: 'Introduction to Alibaba Cloud ROS',
+          imageUrl: 'ros',
+          status: 'By Alibaba Cloud x Codepolitan.',
+        },
+        {
+          id: 12,
+          name: 'Introduction to Ansible',
+          imageUrl: 'ansible',
+          status: 'By Alibaba Cloud x Codepolitan.',
+        },
+        {
+          id: 13,
+          name: 'Introduction to GIT',
+          imageUrl: 'git',
+          status: 'By Alibaba Cloud x Codepolitan.',
+        },
+        {
+          id: 14,
+          name: 'Introduction to IaC',
+          imageUrl: 'iac',
+          status: 'By Alibaba Cloud x Codepolitan.',
+        },
+        {
+          id: 15,
+          name: 'Introduction to Jenkins',
+          imageUrl: 'jenkins',
+          status: 'By Alibaba Cloud x Codepolitan.',
+        },
+        {
+          id: 16,
+          name: 'Introduction to Serverles Computing',
           imageUrl: 'serverlesscomputing',
           status: 'By Alibaba Cloud x Codepolitan.',
         },
@@ -83,18 +131,6 @@ export default {
                   <div class="w-full mt-4 text-normal text-sm text-left text-amber-200">{{ item.tech }}</div>
                   <div class="w-full flex justify-end">
                     <div class="flex cursor-pointer items-end gap-2 text-primary">
-                      <!-- <a v-if="item.github !== 'null'" :href="item.github" target="_blank" rel="noreferrer" title="View github repository" class="transition-all hover:text-accent">
-                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                        </svg>
-                      </a>
-                      <a v-if="item.demo !== 'null'" :href="item.demo" target="_blank" rel="noreferrer" title="View finished project" class="transition-all hover:text-accent">
-                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                          <polyline points="15 3 21 3 21 9"></polyline>
-                          <line x1="10" y1="14" x2="21" y2="3"></line>
-                        </svg>
-                      </a> -->
                     </div>
                   </div>
                 </div>
