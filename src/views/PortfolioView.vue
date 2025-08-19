@@ -6,6 +6,33 @@ export default {
       items: [
         {
           id: 1,
+          name: 'Kecerdasan Buatan (Vynix AI)',
+          imageUrl: 'vynixai',
+          status: 'A personal project that discusses the concept of artificial intelligence with Vynix AI branding, in the form of a simple landing page to introduce the technology and its development ideas.',
+          tech: 'HTML, CSS, JavaScript, Nix',
+          github: 'https://github.com/AnandaAnugrahHandyanto/kecerdasan_buatan',
+          demo: 'https://kecerdasan-buatan.vercel.app/'
+        },
+        {
+          id: 2,
+          name: 'Kalender Libur Nasional',
+          imageUrl: 'kalender',
+          status: 'A modern and responsive web-based calendar application. It displays Indonesian national holidays, allows users to manage personal events, and includes the Javanese (market) calendar.',
+          tech: 'HTML, CSS, JavaScript, Tailwind CSS',
+          github: 'https://github.com/AnandaAnugrahHandyanto/kalender',
+          demo: 'https://kalender-pi.vercel.app/'
+        },
+        {
+          id: 3,
+          name: 'Keripik Basreng Keen-Chips',
+          imageUrl: 'keripik',
+          status: 'A modern food menu web app tailored for F&B businesses, with clean UI and responsive design.',
+          tech: 'HTML, CSS, JavaScript, PHP',
+          github: 'https://github.com/AnandaAnugrahHandyanto/keripik_basreng_keen-chips',
+          demo: 'https://keripikbasrengkeen-chips.vercel.app/'
+        },
+        {
+          id: 4,
           name: 'React Simple Landing Page',
           imageUrl: 'ags',
           status: 'Personal project in the form of a simple landing page for PT Azha Global Solutions, displaying the company profile and their services.',
@@ -14,7 +41,7 @@ export default {
           demo: 'https://simple-website-tan-one.vercel.app/'
         },
         {
-          id: 2,
+          id: 5,
           name: 'Personal Website',
           imageUrl: 'v1',
           status: 'This is my personal site designed to showcase my profile, skills and projects. The site is also used as a platform for experimenting with new technologies.',
@@ -23,7 +50,7 @@ export default {
           demo: 'https://portfolio-seven-jade-10.vercel.app/'
         },
         {
-          id: 3,
+          id: 6,
           name: 'Android Custom Rom Android Ice Cold Project (AICP)',
           imageUrl: 'aicp',
           status: 'Custom ROM for Xiaomi Redmi Note 7, downloaded 894 times.',
@@ -32,7 +59,7 @@ export default {
           demo: 'null'
         },
         {
-          id: 4,
+          id: 7,
           name: 'Android Custom Rom AlphaDroid',
           imageUrl: 'alpha',
           status: 'Custom ROM for Xiaomi Redmi Note 10, downloaded 792 times.',
@@ -41,7 +68,7 @@ export default {
           demo: 'null'
         },
         {
-          id: 5,
+          id: 8,
           name: 'Android Custom Rom BlissOS',
           imageUrl: 'bliss',
           status: 'Custom ROM for Poco M5, downloaded 439 times.',
@@ -50,7 +77,7 @@ export default {
           demo: 'null'
         },
         {
-          id: 6,
+          id: 9,
           name: 'Android Custom Rom CherishOS',
           imageUrl: 'cherish',
           status: 'Custom ROM for Xiaomi Redmi Note 10, downloaded 1,3k times.',
@@ -59,7 +86,7 @@ export default {
           demo: 'null'
         },
         {
-          id: 7,
+          id: 10,
           name: 'Android Custom Rom ColtOS',
           imageUrl: 'colt',
           status: 'Custom ROM for Xiaomi Redmi Note 10, downloaded 1,7k times.',
@@ -68,7 +95,7 @@ export default {
           demo: 'null'
         },
         {
-          id: 8,
+          id: 11,
           name: 'Android Custom Rom CraftROM',
           imageUrl: 'craft',
           status: 'Custom ROM for Xiaomi Redmi Note 7, downloaded 332 times.',
@@ -77,7 +104,7 @@ export default {
           demo: 'null'
         },
         {
-          id: 9,
+          id: 12,
           name: 'Android Custom Rom DerpFest',
           imageUrl: 'derp',
           status: 'Custom ROM for Xiaomi Redmi Note 10, downloaded 886 times.',
@@ -86,7 +113,7 @@ export default {
           demo: 'null'
         },
         {
-          id: 10,
+          id: 13,
           name: 'Android Custom Rom DroidX-UI',
           imageUrl: 'droidx',
           status: 'Custom ROM for Xiaomi Redmi Note 7, downloaded 1,1k times.',
@@ -95,7 +122,7 @@ export default {
           demo: 'null'
         },
         {
-          id: 11,
+          id: 14,
           name: 'Android Custom Rom FireDroid',
           imageUrl: 'fire',
           status: 'Custom ROM for Xiaomi Redmi Note 7, downloaded 845 times.',
@@ -104,7 +131,7 @@ export default {
           demo: 'null'
         },
         {
-          id: 12,
+          id: 15,
           name: 'Android Custom Rom LmoDroid',
           imageUrl: 'lmo',
           status: 'Custom ROM for Xiaomi Redmi Note 10, downloaded 830 times.',
@@ -113,7 +140,7 @@ export default {
           demo: 'null'
         },
         {
-          id: 13,
+          id: 16,
           name: 'Android Custom Rom SparkOS',
           imageUrl: 'spark',
           status: 'Custom ROM for Xiaomi Redmi Note 10, downloaded 1,7k times.',
@@ -122,7 +149,7 @@ export default {
           demo: 'null'
         },
         {
-          id: 14,
+          id: 17,
           name: 'Android Custom Rom VoltageOS',
           imageUrl: 'voltage',
           status: 'Custom ROM for Poco X6 5G/Redmi Note 13 Pro 5G, downloaded 479 times.',
