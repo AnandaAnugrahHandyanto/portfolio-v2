@@ -88,15 +88,6 @@ export default {
   border-radius: 16px;
 }
 
-/* Nav link */
-.nav-link {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.nav-link:hover {
-  color: white;
-}
-
 /* Active route */
 .router-link-exact-active {
   color: white;
