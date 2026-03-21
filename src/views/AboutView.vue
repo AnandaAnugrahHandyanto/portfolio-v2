@@ -192,7 +192,7 @@ export default {
           >
             <li class="mr-2">
               <button
-                class="glass inline-block px-4 py-3 rounded-lg hover:text-white"
+                class="glass inline-block px-4 py-3 rounded-lg"
                 :class="{
                   'text-amber-200 bg-amber-200 bg-opacity-10': activeTab === 1,
                 }"
@@ -203,7 +203,7 @@ export default {
             </li>
             <li class="mr-2">
               <button
-                class="inline-block px-4 py-3 rounded-lg hover:text-white"
+                class="glass inline-block px-4 py-3 rounded-lg"
                 :class="{
                   'text-amber-200 bg-amber-200 bg-opacity-10': activeTab === 2,
                 }"
@@ -216,7 +216,7 @@ export default {
         </div>
         <div v-show="activeTab === 1">
           <div
-            class="grid grid-cols-2 gap-4 pb-32 md:grid-cols-3 md:gap-8 xl:grid-cols-4 xl:gap-10 2xl:gap-12"
+            class="glass grid grid-cols-2 gap-4 pb-32 md:grid-cols-3 md:gap-8 xl:grid-cols-4 xl:gap-10 2xl:gap-12"
           >
             <div v-for="item in tech" :key="item.id">
               <div
@@ -255,7 +255,7 @@ export default {
         </div>
         <div v-show="activeTab === 2">
           <div
-            class="grid grid-cols-2 gap-4 pb-32 md:grid-cols-3 md:gap-8 xl:grid-cols-4 xl:gap-10 2xl:gap-12"
+            class="glass grid grid-cols-2 gap-4 pb-32 md:grid-cols-3 md:gap-8 xl:grid-cols-4 xl:gap-10 2xl:gap-12"
           >
             <div v-for="item in tools" :key="item.id">
               <div
