@@ -1,6 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-[#0a0a0a] via-[#111] to-black text-white">
-
+  <div class="min-h-screen bg-[#0b0b0b] text-white">
     <!-- Navbar -->
     <nav class="fixed top-0 left-0 right-0 z-50 px-4 md:px-8 py-3">
       <div class="max-w-7xl mx-auto flex items-center justify-between glass px-6 py-3">
@@ -74,18 +73,17 @@ export default {
 
 /* Liquid glass */
 .glass {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
 }
 
 /* Nav link */
 .nav-link {
-  position: relative;
-  transition: all 0.3s ease;
+  color: rgba(255,255,255,0.6);
 }
+
 .nav-link:hover {
   color: white;
 }
