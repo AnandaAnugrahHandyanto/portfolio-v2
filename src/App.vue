@@ -1,61 +1,58 @@
 <template>
-  <!-- component -->
-  <!-- This is an example component -->
-  <div class="max-w-7xl mx-auto flex flex-col relative">
+  <div class="min-h-screen bg-gradient-to-br from-[#0a0a0a] via-[#111] to-black text-white">
 
-    <nav class="max-w-7xl px-5 md:fixed top-0 z-[98] w-screen backdrop-blur-md bg-[#121212] bg-opacity-80">
-      <div class="container mx-auto flex flex-wrap items-center justify-between">
-        <button @click="redirectToHome" class="flex">
-          <span class="self-center text-lg text-[#ffdb70] font-semibold whitespace-nowrap fadein-bot hover:text-amber-100">Ananda Anugrah Handyanto</span>
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 px-4 md:px-8 py-3">
+      <div class="max-w-7xl mx-auto flex items-center justify-between glass px-6 py-3">
+
+        <!-- Logo -->
+        <button @click="redirectToHome" class="text-[#ffdb70] font-semibold text-lg hover:text-amber-200 transition">
+          Ananda Anugrah Handyanto
         </button>
-        <div class="flex md:order-2 fadein-bot">
-          <a href="https://github.com/AnandaAnugrahHandyanto"><img class="w-9 rounded-full" src="https://seeklogo.com/images/G/github-logo-2E3852456C-seeklogo.com.png" alt="github"></a>
+
+        <!-- Right -->
+        <div class="flex items-right gap-4">
+          <a href="https://github.com/AnandaAnugrahHandyanto" target="_blank">
+            <img class="w-9 rounded-full hover:scale-110 transition" src="https://seeklogo.com/images/G/github-logo-2E3852456C-seeklogo.com.png" />
+          </a>
         </div>
-        <div class="hidden md:flex justify-between items-center w-full md:w-auto md:order-1" id="mobile-menu-3">
-          <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
-            <li>
-              <router-link to="/"
-                class="fadein-bot text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0"
-                aria-current="page">Home</router-link>
-            </li>
-            <li>
-              <router-link to="/about"
-                class="fadein-bot fadein-1 text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0">About</router-link>
-            </li>
-            <li>
-              <router-link to="/portfolio"
-                class="fadein-bot fadein-2 text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0">Portfolio</router-link>
-            </li>
-            <li>
-              <router-link to="/certification"
-                class="fadein-bot fadein-3 text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0 sertification">Certification</router-link>
-            </li>
-          </ul>
+
+        <!-- Menu -->
+        <div class="hidden md:flex gap-8 text-sm text-white/70">
+          <router-link to="/" class="nav-link">Home</router-link>
+          <router-link to="/about" class="nav-link">About</router-link>
+          <router-link to="/portfolio" class="nav-link">Portfolio</router-link>
+          <router-link to="/certification" class="nav-link">Certification</router-link>
         </div>
+
       </div>
     </nav>
 
-    <div class="md:mt-[100px]">
+    <!-- Content -->
+    <main class="pt-24 px-4 md:px-0 max-w-7xl mx-auto">
       <router-view />
-    </div>
+    </main>
+
+    <!-- Mobile Nav -->
+    <footer class="md:hidden fixed bottom-0 left-0 right-0 z-50 px-4 pb-3">
+      <div class="glass flex justify-around py-3 text-xs">
+        <router-link to="/" class="mobile-link">Home</router-link>
+        <router-link to="/about" class="mobile-link">About</router-link>
+        <router-link to="/portfolio" class="mobile-link">Portfolio</router-link>
+        <router-link to="/certification" class="mobile-link">Certification</router-link>
+      </div>
+    </footer>
+
   </div>
-  <footer class="block md:hidden fixed bottom-0 left-0 right-0 rounded-t-3xl border border-[#383838] bg-[#121212] bg-opacity-80 backdrop-blur-md backdrop-opacity-90">
-  <nav class="flex justify-around py-4 text-xs">
-    <router-link to="/" class="text-gray-300 hover:text-white">Home</router-link>
-    <router-link to="/about" class="text-gray-300 hover:text-white">About</router-link>
-    <router-link to="/portfolio" class="text-gray-300 hover:text-white">Portfolio</router-link>
-    <router-link to="/certification" class="text-gray-300 hover:text-white">Certification</router-link>
-  </nav>
-</footer>
 </template>
 
 <script>
 export default {
   methods: {
     redirectToHome() {
-      this.$router.push('/')
+      this.$router.push("/")
     }
-  },
+  }
 }
 </script>
 
@@ -63,79 +60,60 @@ export default {
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
+/* Scrollbar */
 ::-webkit-scrollbar {
-  width: 5px; /* for vertical scrollbar */
-  height: 5px; /* for horizontal scrollbar */
+  width: 5px;
 }
-
-::-webkit-scrollbar-track {
-  background: hsl(240, 1%, 17%);
-  border-radius: 5px;
-}
-
 ::-webkit-scrollbar-thumb {
   background: #ffdb70;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
-::-webkit-scrollbar-button { width: 20px; }
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background: hsl(0, 0%, 7%);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  height: 100vh;
+/* Liquid glass */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
-nav {
-  padding: 30px;
+/* Nav link */
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-  transition: color 0.3s;
-}
-
-nav a.router-link-exact-active {
-  display: inline-flex;
-  flex-direction: column;
+.nav-link:hover {
   color: white;
-  transition: color 0.3s;
 }
 
-nav a.router-link-exact-active::after {
-  display: inline-block;
+/* Active route */
+.router-link-exact-active {
+  color: white;
+}
+.router-link-exact-active::after {
   content: "";
-  margin-top: 0.08em;
-  width: 100%;
-  height: 4px;
+  display: block;
+  height: 3px;
+  margin-top: 4px;
   border-radius: 2px;
-  background-color: #ffdb70;
+  background: #ffdb70;
 }
 
-nav a.router-link-exact-active:hover {
+/* Mobile link */
+.mobile-link {
+  color: rgba(255,255,255,0.6);
+  transition: 0.3s;
+}
+.mobile-link:hover {
   color: white;
 }
 
-
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+/* Smooth Ui */
+* {
+  transition: all 0.25s ease;
 }
-
 </style>
