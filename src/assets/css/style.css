@@ -7,3 +7,7 @@
 h1 {
   color: blue;
 }
+
+* {
+  @apply transition-all duration-300 ease-in-out;
+}
