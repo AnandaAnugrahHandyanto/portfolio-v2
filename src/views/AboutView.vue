@@ -192,7 +192,7 @@ export default {
           >
             <li class="mr-2">
               <button
-                class="inline-block px-4 py-3 rounded-lg hover:text-white"
+                class="glass inline-block px-4 py-3 rounded-lg hover:text-white"
                 :class="{
                   'text-amber-200 bg-amber-200 bg-opacity-10': activeTab === 1,
                 }"
